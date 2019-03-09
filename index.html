@@ -2,154 +2,131 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Leonidas Esteban</title>
+    <title>Mildred Guerra Rodriguez</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">    
+    <script src="scripts/script.js"></script>  
   </head>
   <body>
-      <header class=" header ">    
-         <div class="container">
-          <figure class="logo">
-            <img src="images/logo.png" height="50px" alt="Logo de http://leonidasesteban.com" />
-          </figure>
-          <nav  class="menu ">
-            <ol>
-              <li>
-                <a  class="link" href="#portaafolio">Portafolio</a>
-              </li>
-              <li>
-                <a  class="link" href="#experiencia">Experiencia</a>
-              </li>
-              <li>
-                <a  class="link button" href="#suscripcion">Trabajemos juntos</a>
-              </li>
-            </ol>
-          </nav>
+    <header class=" header ">    
+        <div class="container">
+        <figure class="logo">
+          <img src="images/logo.png" height="100px" alt="Logo de http://mildredguerrar/portafolio.com" />
+        </figure>
+        <figure class="logo-responsive">
+          <img src="images/favicon.png"  alt="Logo de http://mildredguerrar/portafolio.com" />
+        </figure>
+        
+        <span class="open" onclick="openNavbar()">&#9776; </span>
+        <div id="navbar" class="overlay">
+          <a href="javascript:void(0);" onclick="closeNavbar()" class="close">&#9932;</a>
+          <div class="overlay-content">
+            <a href="#home" >Home</a>
+            <a href="#projects" >Projects</a>
+            <a href="#contact" >Contact</a>
+          </div>
         </div>
-      </header>
-    <section  class=" hero ">
+      </div>
+    </header>
+    
+    <section  id="home" class=" hero ">
       <div class="container">
         <h1>
-          Hola! Soy <strong>Leonidas Esteban</strong><br/> Desarrollador  <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+        Mildred Guerra Rodriguez
         </h1>
+
         <figure>
           <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
         </figure>
       </div>
     </section>
-    <section class=" main-section">
-        <div class="container">
-          <section   class="portfolio " id="portafolio">
-            <h2 >Portafolio (Proyectos Destacados)</h2>
-            <article class="project  ">
-              <div class="project-details  ">
-              <h3 class="project-title  ">Platzi Video</h3>
-              <h6 class="project-course  ">React Native / React</h6>
-              <p class="project-date  "><small><strong>Fecha:</strong> 01/07/2018</small></p>
-              <p class="project-url  "><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-              <p class="project-description  ">Platzi Video fue el resultado de 3 meses de trabajo
-                  para crear la mejor app para enseñar el funcionamiento
-                  de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-                </div>
-                  <figure  class="project-image-container  ">
-                  <img  class="project-image  " width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-              </figure>
-                
-            </article>
-            
-            <article class="project  ">
-                <div class="project-details  ">
-                <h3 class="project-title  ">Platzi Video</h3>
-                <h6 class="project-course  ">React Native / React</h6>
-                <p class="project-date  "><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                <p class="project-url  "><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-                <p class="project-description  ">Platzi Video fue el resultado de 3 meses de trabajo
-                    para crear la mejor app para enseñar el funcionamiento
-                    de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-                  </div>
-                    <figure  class="project-image-container  ">
-                    <img  class="project-image  " width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-                </figure>
+    
+    <section  id="projects" class="projects" >
+      <h2 class="black">Projects</h2>
+      
+      <div class=" projects-collection">
+        <article class="project " >
+        
+            <a  class="button " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">
+          <figure class="project-image-container ">
+            <img  class="project-image "src="images/platzi-conf.jpg" width="500" />
+            </figure>
+          <div class="project-details">
+              <h3 class="project-title project-url  ">PlatziConf México 2018</h3>
+            <div class="date">2017</div>
+          </div>
+          </a>
+        </article>
+        <article class="project " >
+        
+            <a  class="button " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">
+          <figure class="project-image-container ">
+            <img  class="project-image "src="images/platzi-conf.jpg" width="500" />
+          </figure>
+          
+          <div class="project-details">
+              <h3 class="project-title project-url  ">PlatziConf México 2018</h3>
+            <div class="date">2017</div>
+          </div>
+          </a>
+        </article>
+        <article class="project " >
+        
+            <a  class="button " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">
+          <figure class="project-image-container ">
+            <img  class="project-image "src="images/platzi-conf.jpg" width="500" />
+          </figure>
+          
+          <div class="project-details">
+              <h3 class="project-title project-url  ">PlatziConf México 2018</h3>
+            <div class="date">2017</div>
+          </div>
+          </a>
+        </article>
+        </article>
+        <article class="project " >
+        
+            <a  class="button " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">
+          <figure class="project-image-container ">
+            <img  class="project-image "src="images/platzi-conf.jpg" width="500" />
+          </figure>
+          
+          <div class="project-details">
+              <h3 class="event-title event-url  ">PlatziConf México 2018</h3>
+            <div class="date">2017</div>
+          </div>
+          </a>
+        </article>
+      </div>
+    
+    </section>
+    <section id="contact" class="contact  ">
+
+          <h2>Contact me</h2>
                   
-              </article>
-          </section>
-          <section  id="eventos" >
-            <h2>Más sobre mi experiencia</h2>
-            
-          <section class=" events-collection">
-            <article class="event " >
-              <figure class="event-image-container ">
-                <img  class="event-image "src="images/platzi-conf.jpg" width="500" />
-              </figure>
-              <div class="event-details">
-                <h3 class="event-title ">PlatziConf México 2018</h3>
-                <p class="event-description ">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-                <a  class="button event-url " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">Ver Plática</a>
-              </div>
-            </article>
-            <article class="event " >
-              <figure class="event-image-container ">
-                <img  class="event-image "src="images/platzi-conf.jpg" width="500" />
-              </figure>
-              <div class="event-details">
-                <h3 class="event-title ">PlatziConf México 2018</h3>
-                <p class="event-description ">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-                <a  class="button event-url " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">Ver Plática</a>
-              </div>
-            </article>
-            <article class="event " >
-              <figure class="event-image-container ">
-                <img  class="event-image "src="images/platzi-conf.jpg" width="500" />
-              </figure>
-              <div class="event-details">
-                <h3 class="event-title ">PlatziConf México 2018</h3>
-                <p class="event-description ">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-                <a  class="button event-url " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">Ver Plática</a>
-              </div>
-            </article>
-            </article>
-            <article class="event " >
-              <figure class="event-image-container ">
-                <img  class="event-image "src="images/platzi-conf.jpg" width="500" />
-              </figure>
-              <div class="event-details">
-                <h3 class="event-title ">PlatziConf México 2018</h3>
-                <p class="event-description ">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-                <a  class="button event-url " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">Ver Plática</a>
-              </div>
-            </article>
-          </section>
-            
-          </section>
+                  <p> Got a question or comment about my work or MMT? Reach out and let’s talk. I look forward to hearing from you.</p>
+        
+      <div class="container">
+        <div class="email">
+          <h4> Email me</h4> 
+          <a class="email "href="mildredguerrar@gmail.com" >mildredguerrar@gmail.com</a>
         </div>
-          <section id="contacto" class="contact ">
-            
-            <div class="container">
-              <form  class="form-email "action="/suscription/">
-                <h3>Creamos algo juntos?</h3>
-                  <input id="correo" type="email" placeholder="  Email" >
-                    <button class=" ">Enviar</button>
-              </form>
-              <div class="social">
-                <a class="social-link twitter "href="https://.com/leonidasesteban" ></a>
-                <a class="social-link facebook"href="https://.com/leonidasesteban" ></a>
-                <a class="social-link instagram"href="https://.com/leonidasesteban" ></a>
-                <a class="social-link github"href="https://.com/leonidasesteban" ></a>
-              </div>
-             </div>
-          </section>
+        <div class="social">
+          <h4> Send a message</h4> 
+          <a class="social-link linkedin"href="https://linkein.com/mildredguerrar" ></a>
+          <a class="social-link github"href="https://github.com/mildredguerrar" ></a>
+        </div>
+      </div>
     </section>
     <footer>
-      <div class="container">
-        <div>
-          <p>Curso de Desarrollo Web Online 2019 <img src="images/platzi.png" alt=""></p>
-        </div>
-        <p>
-          Designed with <\3 by 
-          <a href="https//thespianartist">thespianartist</a>
-        </p>
-      </div>
+          <a class=""href="https://linkein.com/mildredguerrar" >LinkedIn </a>|
+          <a class=""href="https://github.com/mildredguerrar" > GitHub </a>|
+          <a class="email "href="mildredguerrar@gmail.com" > Email </a>
+          
+          <a class="arrow-up"href="https://github.com/mildredguerrar" ></a>
+
     </footer>
+
   </body>
 </html>
