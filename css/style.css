@@ -60,20 +60,21 @@ a{
     width: 100%;
     text-align: center;
 }
-.logo {
+.logo img{
     display:none;
 }
 
 
 /* ------------------------------------------- RESPONSIVE MENU */
-header {
-    
-	padding: 2%;
-}
 /*logo*/
 .logo-responsive img {
     height: 150px;
     }
+
+header {
+    
+	padding: 2%;
+}
 
     /*hamburguer menu*/
 .open, .close{
@@ -318,6 +319,46 @@ footer a{
     
 }
 
+@media (max-width: 700px) {
+    .logo-responsive img {
+        height: 80px;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+    .logo-responsive img {
+        height: 100px;
+    }
+    h2 {
+        font: bold 34px;
+    }
+    .open, .close {
+        font-size: 42px;
+    }
+    .project {
+        width: 46%;
+        margin: 0 2%;
+    }
+    .project-title {
+        font-size: 22px;
+    }
+    
+    .date {
+        font-size: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 20px;
+    }
+    .social-link {
+        width: 75px;
+        height: 75px;
+        background-size: 75px;
+    }
+}
+
 @media (max-width: 800px) {
     .hero figure img, .hero figure iframe {
         height: 65vh;
@@ -327,13 +368,18 @@ footer a{
         max-height: 400px;
     }
 }
-
 @media (max-width: 900px) {
-    .hero figure img, .hero figure iframe {
-        height: 65vh;
+    .project {
+        flex-shrink: 0;
+        width: 31%;
+        margin: 0 1%;
     }
-    .hero {
-        height: 65vh;
-        max-height: 400px;
+    .logo img {
+        display:block;
     }
+
+    .logo-responsive img {
+        display:none;
+        }
+    
 }
