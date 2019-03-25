@@ -68,29 +68,26 @@ a{
 /* ------------------------------------------- RESPONSIVE MENU */
 header {
     
-	padding: 2%;
+	padding: 1px;
 }
-/*logo*/
 .logo-responsive img {
-    height: 200px;
+    height: 130px;
     }
-
-    /*hamburguer menu*/
 .open, .close{
 	display: inline-block;
 	padding:var(--space) 0 0 30px;
 	cursor: pointer;
-	font-size:7.7rem;
+	font-size:3.7rem;
 	color: var(--white-color);
 	text-decoration: none;
     transition: .5s;
-    margin-left: -40px;
+    
     text-align: right;
     width: 100%;
     padding: var(--space-2) 25px 0 30px;
 }
 
-/*overlay*/
+
 .overlay{
 	position: fixed;
 	width: 0;
@@ -109,13 +106,13 @@ header {
 	padding-top: 50px;
 	margin-top: 30px;
 }
-/*menu links*/
+
 .overlay-content a {
-	font-size: 8rem;
+	font-size: 2rem;
 	color: var(--white-color);
 	display: block;
 	padding:var(--space);
-	margin-bottom: 130px;
+	margin-bottom: 4px;
 	text-decoration: none;
 	transition: .3s;
 	position: relative;
@@ -146,19 +143,13 @@ header {
 .hero {
     display: flex;
     width: 100%;
-    /*45% el altro del dispositivo*/
-    height: 45vh;
-}
-
-.hero .container {
-    height: inherit;
 }
 .hero h1 {
-    margin: auto;
+    margin: 20%;
     color: var(--pink-color);
     position: relative;
     text-align: center;
-    font: normal normal normal 9rem/1.25em 'playfair display',serif;
+    font: normal normal normal 4rem/1.25em 'playfair display',serif;
 }
 .hero h2 {
     margin: 20%;
@@ -178,14 +169,14 @@ h2 {
     padding: 40px 0px;
     text-align: center;
     text-transform: capitalize;
-    font: bold 7rem Consolas;
+    font: bold 3rem Consolas;
 }
 .hero figure {
     margin: 0;
+    height: 30%;
     overflow: hidden;
     position: absolute;
     z-index: -2;
-    height: inherit;
 }
 .hero figure img,
 .hero figure iframe
@@ -195,7 +186,6 @@ h2 {
     object-fit: cover;
     /* filter: blur(2px); */
     opacity: 0.3;
-    height: inherit;
 }
 
 /* ------------------------------------------- MAIN SECTION */
@@ -224,10 +214,10 @@ h2 {
     opacity: 0.75;
 }
 .project-details {
-    padding: 3% 2%;
+    padding: 5px var(--space) 25px;
 }
 .project-title {
-    font-size: 5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -246,21 +236,20 @@ h2 {
     font-style: lighter;
     font-weight: 300;
     color: #666666;
-    font-size: 4rem;
+    font-size: 1.52em;
     line-height: 29px;
-    margin: 1%;
 }
 .contact {
     color: var(--pink-color);
     font-family: 'RobotoSlab', Georgia, serif, Helvetica, Arial, Sans-Serif;
     min-height:300px ;
     text-align: center;
-    margin: 3%;
-    font-size: 3em;
+    margin: var(--space-2);
 }
 
 .contact p{
     font-weight: 500;
+    font-size: 2em;
     color: var(--white-color);
 }
 .contact a{
@@ -272,13 +261,14 @@ h2 {
 }
 .contact .container div {
     margin: var(--space-2) 0;
+    font-size: 2em;
 }
 
 .social-link{
-    width: 200px;
-    height: 200px;
+    width: 90px;
+    height: 90px;
     display: inline-block;
-    background-size: 200px 200px;
+    background-size: 90px 90px;
     margin: var(--space-2) var(--space);
     background-repeat: no-repeat;
 }
@@ -310,11 +300,10 @@ footer {
     text-align: center;
     padding: var(--space-2) 0;
     color: var(--white-color);
-    
-    font-size: 3rem;
 }
 
 footer a{
     color: var(--white-color);
     
+    font-size: 2em;
 }
