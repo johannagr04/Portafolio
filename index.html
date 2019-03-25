@@ -2,11 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mildred Guerra Rodriguez</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">    
-    <script src="scripts/script.js"></script>  
   </head>
   <body>
     <header class=" header ">    
@@ -19,12 +16,12 @@
         </figure>
         
         <span class="open" onclick="openNavbar()">&#9776; </span>
-        <div id="navbar" class="overlay">
+        <div id="navbar" >
           <a href="javascript:void(0);" onclick="closeNavbar()" class="close">&#9932;</a>
-          <div class="overlay-content">
+          <div  id="navbar-content" >
             <a href="#home" >Home</a>
             <a href="#projects" >Projects</a>
-            <a href="#contact" >Contact</a>
+            <a href="#contact" class="button" >Contact</a>
           </div>
         </div>
         
@@ -86,6 +83,18 @@
           </div>
           </a>
         </article>
+        
+        <article class="project " >
+          <a  class="button " href="https://www.youtube.com/watch?v=Y0vDT4szTmY" target="blank">
+            <figure class="project-image-container ">
+            <img  class="project-image "src="images/platzi-conf.jpg" width="500" />
+            </figure>
+            <div class="project-details">
+              <h3 class="project-title project-url  ">PlatziConf México 2018</h3>
+              <div class="date">2017</div>
+            </div>
+          </a>
+        </article>
        
       </div>
     
@@ -105,17 +114,25 @@
           <h4> Send a message</h4> 
           <a class="social-link linkedin"href="https://linkein.com/mildredguerrar" ></a>
           <a class="social-link github"href="https://github.com/mildredguerrar" ></a>
+          <a class="social-link platzi"href="https://platzi.com/mildredguerrar" ></a>
+       
         </div>
       </div>
     </section>
     <footer>
           <a class=""href="https://linkein.com/mildredguerrar" >LinkedIn </a>|
           <a class=""href="https://github.com/mildredguerrar" > GitHub </a>|
+          <a class="platzi"href="https://platzi.com/mildredguerrar" > Platzi </a>|
           <a class="email "href="mildredguerrar@gmail.com" > Email </a>
-          
+         
           <a class="arrow-up"href="https://github.com/mildredguerrar" ></a>
 
     </footer>
 
   </body>
+     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">  
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="scripts/script.js"></script>  
 </html>
