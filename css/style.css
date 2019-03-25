@@ -255,7 +255,7 @@ h2 {
     min-height:300px ;
     text-align: center;
     margin: 3%;    
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .contact p{
@@ -274,10 +274,10 @@ h2 {
 }
 
 .social-link{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
-    background-size: 200px 200px;
+    background-size: 100px;
     margin: var(--space-2) var(--space);
     background-repeat: no-repeat;
 }
@@ -318,7 +318,7 @@ footer a{
     
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .hero figure img, .hero figure iframe {
         height: 65vh;
     }
@@ -326,11 +326,14 @@ footer a{
         height: 65vh;
         max-height: 400px;
     }
-    .open{
-        display: none;
+}
 
+@media (max-width: 900px) {
+    .hero figure img, .hero figure iframe {
+        height: 65vh;
     }
-    .navbar{
-        display: block;
+    .hero {
+        height: 65vh;
+        max-height: 400px;
     }
 }
