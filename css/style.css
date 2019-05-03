@@ -72,10 +72,22 @@ a{
     }
 
 header {
-    
+
 	padding: 1%;
 }
+header .container{
+    position: fixed;
 
+    background-color: #1e2025;
+    
+    top: 0;
+    
+    padding: .5%;
+    
+    z-index: 4;
+    
+    right: 0;
+}
     /*hamburguer menu*/
 .open, .close{
 	display: inline-block;
