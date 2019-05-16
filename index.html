@@ -1,127 +1,130 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="es"><head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mildred Guerra Rodriguez</title>
-  </head>
+  <script src="moz-extension://9cc4f5f5-ecee-481d-9501-e9cfead92c4d/assets/prompt.js"></script><script src="moz-extension://9cc4f5f5-ecee-481d-9501-e9cfead92c4d/assets/prompt.js"></script><script src="moz-extension://9cc4f5f5-ecee-481d-9501-e9cfead92c4d/assets/prompt.js"></script></head>
   <body>
     <header class=" header ">    
         <div class="container">
         <figure class="logo">
-          <img src="images/logo.png" height="100px" alt="Logo de http://mildredguerrar/portafolio.com" />
+          <img src="images/logo.png" alt="Logo de http://mildredguerrar/portafolio.com" style="display: none;" height="100px">
         </figure>
         <figure class="logo-responsive">
-          <img src="images/favicon.png"  alt="Logo de http://mildredguerrar/portafolio.com" />
+          <img src="images/favicon.png" alt="Logo de http://mildredguerrar/portafolio.com" style="display: none;">
         </figure>
         
-        <span class="open" onclick="openNavbar()">&#9776; </span>
-        <div id="navbar" >
-          <a href="javascript:void(0);" onclick="closeNavbar()" class="close">&#9932;</a>
-          <div  id="navbar-content" >
-            <a href="#home" >Home</a>
-            <a href="#projects" >Projects</a>
-            <a href="#contact" class="button" >Contact</a>
+        <span class="open" onclick="openNavbar()">☰ </span>
+        <div id="navbar" class="overlay">
+          <a href="javascript:void(0);" onclick="closeNavbar()" class="close">⛌</a>
+          <div id="navbar-content" class="overlay-content">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="button">Contact</a>
           </div>
         </div>
-        
-
       </div>
     </header>
-    
-    <section  id="home" class=" hero ">
-      <div class="container">
-        <h1>
-        Mildred Guerra Rodriguez
-        </h1>
-
-        <figure>
-          <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
-        </figure>
-      </div>
-    </section>
-    
-    <section  id="projects" class="projects" >
-      <h2 class="black">Projects</h2>
+     <section id="body">
+      <section id="home" class=" hero ">
+        <div class="container">
+          <div class="titles">
+            <h1>Front-end Developer </h1>
+            <h2> Mildred Guerra Rodriguez </h2>
+          </div>
+          <figure>
+            <img src="images/hero.jpg" alt="imagen principal del sitio" width="500" height="300"> 
+          </figure>
+        </div>
+      </section>
       
-      <div class=" projects-collection">
-        <article class="project " >
+      <section id="projects" class="projects">
+        <h2 class="black">Projects</h2>
         
-            <a  class="button " href="#" target="blank">
-          <figure class="project-image-container ">
-            <img  class="project-image "src="images/sitio-tec1.PNG" width="500" />
-            </figure>
-          <div class="project-details">
-              <h3 class="project-title project-url  ">Develop - maintenance TEC Site Drupal 7</h3>
-            <div class="date">2015-2018</div>
-          </div>
-          </a>
-        </article>
+        <div class=" projects-collection">
+          <article class="project ">
+          
+            <a class="button " href="#" target="blank">
+              <figure class="project-image-container "> 
+                <img class="project-image " src="images/sitio-tec.png" width="500">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title project-url  "> TEC website</h3>
+                <div class="date">2018</div>
+              </div>
+            </a>
+          </article>
 
-        <article class="project " >
-        
-            <a  class="button " href="#" target="blank">
-          <figure class="project-image-container ">
-            <img  class="project-image "src="images/hoy-tec.PNG" width="500" />
-            </figure>
-          <div class="project-details">
-              <h3 class="project-title project-url  ">Desarrollo del rediseño Hoy en el TEC</h3>
-            <div class="date">2018</div>
-          </div>
-          </a>
-        </article>
+          <article class="project ">
+          
+            <a class="button " href="#" target="blank">
+              <figure class="project-image-container "> 
+                <img class="project-image " src="images/hoyeneltec.png" width="500">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title project-url  ">Hoy en el TEC website</h3>
+                <div class="date">2018</div>
+              </div>
+            </a>
+          </article>
 
-        <article class="project " >
+          <article class="project ">
+          
+            <a class="button " href="#" target="blank">
+              <figure class="project-image-container "> 
+                <img class="project-image " src="images/newsletter.png" width="500">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title project-url  ">Newsletter Tec</h3>
+                <div class="date">2018</div>
+              </div>
+            </a>
+          </article>
+          
         
-            <a  class="button " href="#" target="blank">
-          <figure class="project-image-container ">
-            <img  class="project-image "src="images/newsletter.PNG" width="500" />
-            </figure>
-          <div class="project-details">
-              <h3 class="project-title project-url  ">Newsletter Tec</h3>
-            <div class="date">2018</div>
-          </div>
-          </a>
-        </article>
-        
-       
-      </div>
-    
-    </section>
-    <section id="contact" class="contact  ">
-
-          <h2>Contact me</h2>
-                  
-                  <p> Got a question or comment about my work or MMT? Reach out and let’s talk. I look forward to hearing from you.</p>
-        
-      <div class="container">
-        <div class="email">
-          <h4> Email me</h4> 
-          <a class="email "href="mildredguerrar@gmail.com" >mildredguerrar@gmail.com</a>
         </div>
-        <div class="social">
-          <h4> Send a message</h4> 
-          <a class="social-link linkedin"href="https://linkein.com/mildredguerrar" ></a>
-          <a class="social-link github"href="https://github.com/mildredguerrar" ></a>
-          <a class="social-link platzi"href="https://platzi.com/mildredguerrar" ></a>
-       
+      
+      </section>
+      <section id="contact" class="contact  ">
+        <h2>Contact me</h2>   
+        <p> Got a question or comment about my work or MMT? Reach out and let’s talk. I look forward to hearing from you.</p>
+          
+        <div class="container">
+          <div class="email">
+            <h4> Email me</h4> 
+            <a class="email " href="mildredguerrar@gmail.com">mildredguerrar@gmail.com</a>
+          </div>
+          <div class="social">
+            <h4> Send a message</h4> 
+      
+            <a href="https://linkein.com/mildredguerrar" class=" linkedin">
+              <span class="social-link linkedin"></span>  
+              LinkedIn 
+            </a>
+            <a href="https://github.com/mildredguerrar" class=" github">
+              <span class="social-link github"></span>
+              GitHub
+            </a>
+            <a class="platzi" href="https://platzi.com/mildredguerrar">
+              <span class="social-link platzi"></span>
+              Platzi
+            </a>
+        
+          </div>
         </div>
-      </div>
+      </section>
     </section>
     <footer>
-          <a class=""href="https://linkein.com/mildredguerrar" >LinkedIn </a>|
-          <a class=""href="https://github.com/mildredguerrar" > GitHub </a>|
-          <a class="platzi"href="https://platzi.com/mildredguerrar" > Platzi </a>|
-          <a class="email "href="mildredguerrar@gmail.com" > Email </a>
-         
-          <a class="arrow-up"href="https://github.com/mildredguerrar" ></a>
-
+      <a class="" href="https://linkein.com/mildredguerrar">LinkedIn </a>|
+      <a class="" href="https://github.com/mildredguerrar"> GitHub </a>|
+      <a class="platzi" href="https://platzi.com/mildredguerrar"> Platzi </a>|
+      <a class="email " href="mildredguerrar@gmail.com"> Email </a>
+      
+      <a class="arrow-up" href="https://github.com/mildredguerrar"></a>
     </footer>
-
-  </body>
-     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">  
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
-    <script src="scripts/script.js"></script>  
-</html>
+  
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="scripts/script.js"></script>  
+</body></html>
