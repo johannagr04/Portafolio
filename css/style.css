@@ -6,96 +6,110 @@
 #  \___/____/____/··
 #  ·················
 */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 /*------ Variables */
-:root{
-  /*------ Colores */
-  --green-color: #7ACC2D;
-  --black-color: #1e2025;
-  --white-color:  #fff;
-  --pink-color: #DBC8BE;
-  /*------ Tipografía */
-  --normal:12px;
-  --title:normal normal normal 2rem/1.25em 'playfair display',serif;
-  --subtitle:normal normal normal 1rem/1.25em 'playfair display',serif;
-  /*------ Espaciado */
-  --space:10px;
-  --space-2:20px;
-  /*------ Box shadow*/
-  --box:0px 0 2px 1px #e6e5e9;
+
+:root {
+    /*------ Colores */
+    --green-color: #7ACC2D;
+    --black-color: rgb(82, 82, 82);
+    --white-color: #fff;
+    --pink-color: rgb(219, 200, 190);
+    /*------ Tipografía */
+    --normal: 12px;
+    --title: normal normal normal 2rem/1.25em 'playfair display', serif;
+    --subtitle: normal normal normal 1rem/1.25em 'playfair display', serif;
+    /*------ Espaciado */
+    --space: 10px;
+    --space-2: 20px;
+    /*------ Box shadow*/
+    --box: 0px 0 2px 1px #e6e5e9;
+    --pink-color-dark: rgb(187, 150, 131);
 }
 
+
 /* -------------------------------------------  */
+
 body {
     margin: 0;
     background-color: var(--black-color);
-    font: normal normal normal  'playfair display',serif;
+    font: normal normal normal 'playfair display', serif;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
     letter-spacing: -.2px;
     z-index: -1;
     display: block;
 }
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html,body{
-	width: 100%;
-	height: 100%;
-	font: bold 1rem;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font: bold 1rem;
 }
-a{
-    
+
+a {
     text-decoration: none;
 }
 
+
 /* ------------------------------------------- HEADER SECTION */
+
 .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: center;
 }
-.logo img{
-    display:none;
+
+.logo img {
+    display: none;
 }
 
 
 /* ------------------------------------------- RESPONSIVE MENU */
+
+
 /*logo*/
+
 .logo-responsive img {
     height: 60px;
-    }
+}
 
 header {
-
-	padding: 1%;
-}
-header .container{
+    padding: 0.5% 1%;
+    background-color: var(--black-color);
     position: fixed;
-
-    background-color: #1e2025;
-    
-    top: 0;
-    
-    padding: .5%;
-    
-    z-index: 4;
-    
-    right: 0;
+    width: 100%;
+    z-index: 3;
 }
-    /*hamburguer menu*/
-.open, .close{
-	display: inline-block;
-	padding:var(--space) 0 0 30px;
-	cursor: pointer;
-	font-size:2rem;
-	color: var(--white-color);
-	text-decoration: none;
+
+
+/*hamburguer menu*/
+
+.open,
+.close {
+    display: inline-block;
+    padding: var(--space) 0 0 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--white-color);
+    text-decoration: none;
     transition: .5s;
     margin-left: -40px;
     text-align: right;
@@ -104,40 +118,45 @@ header .container{
     line-height: 2;
 }
 
+
 /*overlay*/
-.overlay{
-	position: fixed;
-	width: 0;
-	top: 0;
-	background-color: #333;
-	opacity: .7;
-	overflow-x: hidden;
-	height: 100%;
-	transition: .5s;
+
+.overlay {
+    position: fixed;
+    width: 0;
+    top: 0;
+    background-color: #333;
+    opacity: .7;
+    overflow-x: hidden;
+    height: 100%;
+    transition: .5s;
 }
 
-.overlay-content{
-	text-align: center;
-	position: relative;
-	width: 100%;
-	padding-top: 50px;
-	margin-top: 30px;
+.overlay-content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 30px;
 }
+
+
 /*menu links*/
-.overlay-content a {
-	font-size: 5rem;
-	color: var(--white-color);
-	display: block;
-	padding:var(--space);
-	margin-bottom: 130px;
-	text-decoration: none;
-	transition: .3s;
-	position: relative;
 
+.overlay-content a {
+    font-size: 5rem;
+    color: var(--white-color);
+    display: block;
+    padding: var(--space);
+    margin-bottom: 130px;
+    text-decoration: none;
+    transition: .3s;
+    position: relative;
 }
-.overlay-content a:after{
-	content: "";
-	position: absolute;
+
+.overlay-content a:after {
+    content: "";
+    position: absolute;
     bottom: 0;
     left: 50%;
     width: 0%;
@@ -146,54 +165,69 @@ header .container{
     background: var(--white-color);
     transition: .3s;
     display: block;
-
-}
-.overlay-content a:hover{
-	color: var(--pink-color);
 }
 
-.overlay-content a:hover:after{
-	width: 25%;
+.overlay-content a:hover {
+    color: var(--pink-color);
 }
+
+.overlay-content a:hover:after {
+    width: 25%;
+}
+
+
 /*------------------------------menu*/
+
 .menu-content a {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
     font-size: 20px;
     flex-direction: row;
-    line-height: 54px; 
+    line-height: 54px;
     margin: 0 5px;
     padding: 5px 23px;
 }
+
 .menu-content a :hover,
-footer a :hover  {
-    color:#bdc5bd;
+footer a :hover {
+    color: #bdc5bd;
 }
+
+#body {
+    padding-top: 70px;
+}
+
+
 /* ------------------------------------------- HERO SECTION */
+
 .hero {
     display: flex;
     width: 100%;
-    /*45% el altro del dispositivo*/
     height: 45vh;
 }
 
-.hero .container {
-    height: inherit;
-    
-    max-height: 400px;
-}
-.hero h1 {
-    margin: auto;
-    color: var(--pink-color);
-    position: relative;
+.hero .titles {
+    display: flex;
+    width: 100%;
     text-align: center;
-    font: normal normal normal 2rem/1.25em 'playfair display',serif;
-    padding: 0 10px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: inherit;
 }
+
+.hero h1 {
+    margin: var(--space) 24%;
+    color: var(--pink-color);
+    font: normal normal normal 2.2rem/1.25em 'playfair display', serif;
+}
+
 .hero h2 {
-    margin: 20%;
-    font: normal normal normal 1.3rem/1.25em 'playfair display',serif;
+    margin: var(--space) 24%;
+    color: var(--white-color);
+    font: normal normal normal 1.5rem/1.25em 'playfair display', serif;
+    padding: 0 10px;
 }
 
 .pink {
@@ -201,7 +235,6 @@ footer a :hover  {
 }
 
 .black {
-    
     color: var(--black-color);
 }
 
@@ -209,9 +242,10 @@ h2 {
     padding: 40px 0px;
     text-align: center;
     text-transform: capitalize;
-    font: bold 4rem;
+    font-size: 2rem;
     font-weight: 600;
 }
+
 .hero figure {
     margin: 0;
     overflow: hidden;
@@ -219,62 +253,67 @@ h2 {
     z-index: -2;
     height: 94vh;
     width: 100%;
-    
 }
+
 .hero figure img,
-.hero figure iframe
- {
+.hero figure iframe {
     height: 45vh;
     max-height: 400px;
-    width:  100%;
+    width: 100%;
     object-fit: cover;
-    /* filter: blur(2px); */
     opacity: 0.3;
 }
 
+
 /* ------------------------------------------- MAIN SECTION */
 
-.main_section{
-  text-align: center;
-  padding: 15%;
+.main_section {
+    text-align: center;
+    padding: 15%;
 }
 
+
 /* -------------------------------------------  PROYECTOS */
+
 .projects {
-    
-    background-color:   var(--pink-color);
+    background-color: var(--white-color);
 }
+
 .projects-collection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .project {
     flex-shrink: 0;
     width: 100%;
 }
+
 .project-image-container:hover {
     opacity: 0.75;
 }
+
 .project-details {
     padding: 3% 2%;
 }
+
 .project-title {
     font-size: 1.3rem;
     font-weight: 600;
-    text-transform: capitalize;
 }
-.project-image  {
+
+.project-image {
     width: 100%;
     z-index: -1;
     object-fit: cover;
     height: 200px;
 }
+
 .project-url {
     color: var(--black-color);
     display: inline-block;
 }
-
 
 .date {
     font-style: lighter;
@@ -284,53 +323,53 @@ h2 {
     line-height: 29px;
     margin: 1%;
 }
+
 .contact {
     color: var(--pink-color);
-    min-height:300px ;
+    min-height: 300px;
     text-align: center;
-    margin: 3%;    
+    margin: 3%;
     font-size: 1rem;
 }
 
-.contact p{
+.contact p {
     font-weight: 500;
     color: var(--white-color);
 }
-.contact a{
+
+.contact a {
     color: var(--white-color);
+    display: inline-grid;
 }
+
 .contact .container {
     margin: var(--space) 0;
     display: block;
 }
+
 .contact .container div {
     margin: var(--space-2) 0;
 }
 
-.social-link{
-    width: 50px;
-    height: 50px;
+.social-link {
     display: inline-block;
-    background-size: 50px;
-    margin: var(--space-2) var(--space);
+    margin: var(--space-2) var(--space) var(--space);
     background-repeat: no-repeat;
 }
 
-.social-link.linkedin{
+.social-link.linkedin {
     background-image: url('../images/linkedin.svg');
 }
-.social-link.github{
+
+.social-link.github {
     background-image: url('../images/github.svg');
-    
 }
-.social-link.platzi{
+
+.social-link.platzi {
     background-image: url('../images/platzi-bd.png');
-    
 }
 
-
-
-.icon-arrow-up{
+.icon-arrow-up {
     background-image: url('../images/arrow-up.svg');
     width: 32px;
     height: 32px;
@@ -340,32 +379,29 @@ h2 {
     text-align: right;
     font-size: 0px;
     line-height: 0px;
-    
 }
 
 footer {
-    background: #26282d;
+    background: --black-color;
     text-align: center;
     padding: var(--space-2) 0;
     color: var(--white-color);
-    
     font-size: 1rem;
 }
 
-footer a{
+footer a {
     color: var(--white-color);
-    
 }
 
-@media screen and (min-width: 700px) and (max-width: 2200px){
-
+@media screen and (min-width: 700px) {
     .hero h1 {
         font-size: 42px;
     }
-    h2 {        
-      font: bold 34px;
+    h2 {
+        font-size: 38px;
     }
-    .open, .close {
+    .open,
+    .close {
         font-size: 42px;
     }
     .project {
@@ -375,7 +411,6 @@ footer a{
     .project-title {
         font-size: 22px;
     }
-    
     .date {
         font-size: 20px;
     }
@@ -386,42 +421,44 @@ footer a{
         font-size: 18px;
     }
     .social-link {
-        width: 75px;
-        height: 75px;
-        background-size: 75px;
+        width: 58px;
+        height: 58px;
+        background-size: 58px;
     }
-    .hero figure img, .hero figure iframe {
-        height: 65vh;
+    .hero figure img,
+    .hero figure iframe {
+        height: 85vh;
     }
     .hero {
-        height: 65vh;
+        height: 80vh;
         max-height: 400px;
     }
     .logo img {
-        display:block;
+        display: block;
         height: 62px;
     }
     /*quita las cosas de rsponsive*/
     .logo-responsive img,
     .open,
     .close {
-        display:none;
+        display: none;
     }
-    
     .button {
         border-style: solid;
         border-width: 1px;
         border-radius: 5px;
         text-decoration: none;
+        border: none;
     }
 }
 
+
 /* and (orientation: landscape)*/
-@media screen and (min-width: 1024px) and (max-width: 2200px) {
+
+@media screen and (min-width: 1024px) {
     .project {
         flex-shrink: 0;
         width: 23%;
         margin: 0 1%;
     }
-    
 }
