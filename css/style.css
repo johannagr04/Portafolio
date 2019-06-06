@@ -220,13 +220,14 @@ footer a :hover {
 .hero h1 {
     margin: var(--space) 24%;
     color: var(--pink-color);
-    font: normal normal normal 2.2rem/1.25em 'playfair display', serif;
+    font: var(--title);
 }
 
 .hero h2 {
     margin: var(--space) 24%;
     color: var(--white-color);
-    font: normal normal normal 1.5rem/1.25em 'playfair display', serif;
+    font: var(--title);
+    font-size: 1.5rem;
     padding: 0 10px;
 }
 
@@ -239,11 +240,12 @@ footer a :hover {
 }
 
 h2 {
-    padding: 40px 0px;
+    font: var(--title);
+    padding: 20px 0px;
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 2rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .hero figure {
@@ -328,7 +330,7 @@ h2 {
     color: var(--pink-color);
     min-height: 300px;
     text-align: center;
-    margin: 3%;
+    /* margin: 3%; */
     font-size: 1rem;
 }
 
@@ -340,6 +342,10 @@ h2 {
 .contact a {
     color: var(--white-color);
     display: inline-grid;
+}
+
+.email {
+    font-size: larger;
 }
 
 .contact .container {
@@ -363,6 +369,10 @@ h2 {
 
 .social-link.github {
     background-image: url('../images/github.svg');
+}
+
+.social-link.twitter {
+    background-image: url('../images/twitter.svg');
 }
 
 .social-link.platzi {
@@ -420,10 +430,13 @@ footer a {
     footer {
         font-size: 18px;
     }
+    .social a {
+        font-size: medium;
+    }
     .social-link {
-        width: 58px;
-        height: 58px;
-        background-size: 58px;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
     }
     .hero figure img,
     .hero figure iframe {
@@ -448,7 +461,6 @@ footer a {
         border-width: 1px;
         border-radius: 5px;
         text-decoration: none;
-        border: none;
     }
 }
 
