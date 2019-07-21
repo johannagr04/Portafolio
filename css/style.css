@@ -277,18 +277,17 @@ h2 {
 
 /* -------------------------------------------  PROYECTOS */
 
-.projects {
+.projects, .main-content {
     background-color: var(--white-color);
 }
 
 .projects-collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    
+    
 }
 
 .project {
-    flex-shrink: 0;
     width: 100%;
 }
 
@@ -328,7 +327,7 @@ h2 {
 
 .contact {
     color: var(--pink-color);
-    min-height: 300px;
+    /* min-height: 300px; */
     text-align: center;
     /* margin: 3%; */
     font-size: 1rem;
@@ -386,13 +385,50 @@ h2 {
     display: inline-block;
     text-align: right;
     vertical-align: middle;
-    text-align: right;
     font-size: 0px;
     line-height: 0px;
 }
+.resume-content .main-content {
+    
+    color: var(--black-color);
+    padding: var(--space-2);
+}
+.resume-content .resume-sidebar{
+    color: var(--white-color);
+    text-align: center;
+}
 
+.resume-content .main-content p {
+    padding: 0 var(--space-2);
+}
+.resume-content h1{
+    color: var(--pink-color-dark);
+    font-size: 40px;
+    text-align:center;
+}
+.resume-content h2{
+    font-size: 32px;
+    text-align:center;
+}
+
+.resume-content h3{
+    font-size: 26px;
+}
+section .item {
+
+    display: grid;
+    grid-template-columns: 100%;
+}
+.resume-content section,.resume-content section .item{
+    padding: var(--space-2);
+}
+.resume-content sidebar a {
+    text-decoration: initial;
+    display: block;
+    color: var(--white-color);
+}
 footer {
-    background: --black-color;
+    background: var(--black-color);
     text-align: center;
     padding: var(--space-2) 0;
     color: var(--white-color);
@@ -415,8 +451,10 @@ footer a {
         font-size: 42px;
     }
     .project {
-        width: 46%;
-        margin: 0 2%;
+        width: 100%;
+        display:grid;
+        grid-template-columns: 50% 20%;
+        
     }
     .project-title {
         font-size: 22px;
@@ -424,10 +462,7 @@ footer a {
     .date {
         font-size: 20px;
     }
-    .contact {
-        font-size: 18px;
-    }
-    footer {
+    .contact footer{
         font-size: 18px;
     }
     .social a {
@@ -462,15 +497,14 @@ footer a {
         border-radius: 5px;
         text-decoration: none;
     }
-}
-
-
-/* and (orientation: landscape)*/
-
-@media screen and (min-width: 1024px) {
-    .project {
-        flex-shrink: 0;
-        width: 23%;
-        margin: 0 1%;
+    .resume-content{
+        display: grid;
+        grid-template-columns:75% 25%;
+    }
+    
+    section .item{
+        display: grid;
+        grid-template-columns: 25% 75%;
     }
 }
+
