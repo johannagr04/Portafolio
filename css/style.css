@@ -634,9 +634,13 @@ a.button {
 }
 
 @media screen and (max-width: 450px) {
+    h1 {
+        margin: var(--space) 10%;
+    }
     .menu-content a {
         font-size: 18px;
         margin: 0 5px;
         padding: 5px 6px;
     }
+    
 }
