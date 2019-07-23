@@ -33,44 +33,92 @@
 
 <body>
        
-    <header class=" header ">
-            
+    <header class=" header ">    
         <div class="container">
-               
             <figure class="logo">
-                
             </figure>
-            <figure class="logo-responsive">
-               
-            </figure>
-
-            <!-- <span class="open" onclick="openNavbar()">☰ </span> -->
-            <div id="navbar" class=" menu">
+            <nav id="navbar" class=" menu">
                 <!-- <a href="javascript:void(0);" onclick="closeNavbar()" class="close">⛌</a> -->
                 <div id="navbar-content" class=" menu-content">
                     <a href="#projects">Projects</a>
-                    <a href="./resume.html">Resume</a>
+                    <a href="./docs/FrontEnd_MildredGuerra.pdf"  download="FrontEnd_MildredGuerra">Resume</a>
                     <!-- <a href="#about">About Me</a> -->
                     <a href="#contact" class="button">Contact</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <section id="body">
+    <main id="body">
         <section id="home" class=" hero ">
             <div class="container">
                 <div class="titles">
-                    <h1>Frontend Developer </h1>
-                    <h2> Mildred Guerra R </h2>
+                    <h1>Hi, I'm Mildred Guerra Frontend Developer </h1>
+                    <!-- <h2> Mildred Guerra R </h2> -->
+                    <a class="btn-resume"href="./docs/FrontEnd_MildredGuerra.pdf"  download="FrontEnd_MildredGuerra" >Resume</a>
                 </div>
                 <figure>
                     <img src="images/hero.jpg" alt="imagen principal del sitio" width="500" height="300">
                 </figure>
             </div>
         </section>
+        <section id="technologies" class="technologies  ">
+            <h2>Technologies</h2>
+            <div class="container">
+                <div>
+                    <div> 
+                        <h3> CMSs</h3>
+                        <div> 
+                            <img src="images/drupal.png" alt="drupal">
+                            <img src="images/wordpress2.png" alt="wordpress">
+                            <!-- <img src="images/Adobe-EM-.png" alt="Adobe-EM"> -->
+                        </div>
+                    </div>
+                    <div> 
+                        <h3> Frameworks </h3>
+                        <div> 
+                            <img src="images/react.png" alt="react">
+                            <!-- <img src="images/angular.png" alt="angular"> -->
+                            <img src="images/Bootstrap.png" alt="bootstrap">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- <div> 
+                        <h3> anguages</h3> 
+                        <div> 
+                                <img src="images/java.png" alt="java">
+                        </div>
+                    </div> -->
+                    
+                    <div> 
+                        <h3> Oters</h3>
+                        <div> 
+                            <img src="images/html5-js-css3.png" alt="html5, css3, javascript">
+                            <img src="images/github.png" alt="github">
+            
+                            <img src="images/mysql.png" alt="mysql">
+                        </div>
+                    </div>
+                    <!-- <div> 
+                        <h3> Design</h3>
+                        <div> </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about  ">
+            <h2>About me</h2>
+            <div class="container">
+                <img class="photo"src="images/photo.jpeg" alt="photo Mildred Guerra">
+                <h3>Mildred Guerra R</h3>
+                <p style="font-size: 20px;"> Web Developer </p>
+                <p>My name is Mildred, I am 26 years old and I live in Costa Rica. I have 4 years of experience in frontend, I work as a freelancer applying my skills in design and development. I love learning and working in a team. If you are interested contact me write me to my email <a href="mailto:mildredguerrar@gmail.com">mildredguerrar@gmail.com</a></p>
+            <div>
+        </section>
 
         <section id="projects" class="projects">
-            <h2 class="black">Projects</h2>
+            <h2 >Projects</h2>
 
             <div class=" projects-collection">
                 <article class="project ">
@@ -124,29 +172,33 @@
             </div>
 
         </section>
+        <!-- <section id="info" class="info"> 
+        </section> -->
         <section id="contact" class="contact  ">
+                <a  class="button btn-secundary" href="https://github.com/mildredguerrar"> GitHub </a>
+                <a  class="button btn-secundary" href="https://platzi.com/@mildredguerrar/"> Certificates </a>
             <h2>Get in touch</h2>
-            <!-- <p> Got a question or comment about my work? Reach out and let’s talk. I look forward to hearing from you.</p> -->
-
             <div class="container">
                 <div class="email">
                     <!-- <h4> Email me</h4> -->
-                    <a href="mailto:mildredguerrar@gmail.com">mildredguerrar@gmail.com</a>
+                    <h3> <a href="mailto:mildredguerrar@gmail.com">mildredguerrar@gmail.com</a> </h3>
                 </div>
                 <div class="social">
                     <!-- <h4> Send a message</h4> -->
 
-                    <!--         <a class="platzi" href="https://platzi.com/mildredguerrar">
-            <span class="social-link platzi"></span>
-            Platzi
+            
+            <a href="https://github.com/mildredguerrar" class=" github">
+                <span class="social-link github"></span>
+                <!-- GitHub -->
+            </a>
+            
+            <!-- <a href="https://twitter.com/mildredguerrar" class=" twitter">
+                <span class="social-link twitter"></span>
+                
             </a> -->
             <a href="https://linkein.com/mildredguerrar" class=" linkedin">
                 <span class="social-link linkedin"></span>
                 <!-- LinkedIn -->
-            </a>
-            <a href="https://github.com/mildredguerrar" class=" github">
-                <span class="social-link github"></span>
-                <!-- GitHub -->
             </a>
 
             <a href="https://twitter.com/mildredguerrar" class=" twitter">
@@ -155,8 +207,9 @@
             </a>
                 </div>
             </div>
+        
         </section>
-    </section>
+    </main>
     <footer>
             <div class="social">
                     <!-- <h4> Send a message</h4> -->
