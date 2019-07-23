@@ -34,10 +34,22 @@
 
 body {
     margin: 0;
-    background-color: var(--black-color);
     font: normal normal normal 'playfair display', serif;
+    
 }
-
+.cover {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    
+    position: absolute;
+}
+.cover div {
+    height: 100vh;
+}
+.cover img {
+    z-index: -1;
+    overflow: hidden;
+}
 h1,
 h2,
 h3,
@@ -89,16 +101,24 @@ a {
 
 .logo-responsive img {
     height: 60px;
+    display: none;
 }
 
 header {
     padding: 0.5% 1%;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     position: fixed;
     width: 100%;
     z-index: 3;
-}
+    /* box-shadow: 49px 12px 12px -1px rgb(255, 255, 255); */
+    /* background-image: url("../images/1.2.PNG"); */
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 0px 0px 16px 0px rgb(235,146,93,1)
 
+    /* background-size: 82% 135%;
+    background-repeat: repeat-x; */
+}
 
 /*hamburguer menu*/
 
@@ -179,7 +199,7 @@ header {
 /*------------------------------menu*/
 
 .menu-content a {
-    color: #fff;
+    color: var(--black-color);
     cursor: pointer;
     text-decoration: none;
     font-size: 20px;
@@ -205,6 +225,9 @@ footer a :hover {
     display: flex;
     width: 100%;
     height: 45vh;
+    background-image: url("../images/2.2.PNG");
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .hero .titles {
@@ -215,17 +238,18 @@ footer a :hover {
     flex-wrap: wrap;
     justify-content: center;
     height: inherit;
+    z-index: 2;
 }
 
 .hero h1 {
     margin: var(--space) 24%;
-    color: var(--pink-color);
+    color: var(--pink-color-dark);
     font: var(--title);
 }
 
 .hero h2 {
     margin: var(--space) 24%;
-    color: var(--white-color);
+    color: var(--black-color);
     font: var(--title);
     font-size: 1.5rem;
     padding: 0 10px;
@@ -255,6 +279,7 @@ h2 {
     z-index: -2;
     height: 94vh;
     width: 100%;
+    display: none;
 }
 
 .hero figure img,
@@ -278,7 +303,11 @@ h2 {
 /* -------------------------------------------  PROYECTOS */
 
 .projects, .main-content {
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    
+    background-image: url("../images/4.2.PNG");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .projects-collection {
@@ -292,7 +321,7 @@ h2 {
 }
 
 .project-image-container:hover {
-    opacity: 0.75;
+    /* opacity: 0.75; */
 }
 
 .project-details {
@@ -326,20 +355,24 @@ h2 {
 }
 
 .contact {
-    color: var(--pink-color);
+    color: var(--pink-color-dark);
     /* min-height: 300px; */
     text-align: center;
     /* margin: 3%; */
     font-size: 1rem;
+    
+    background-image: url("../images/3.PNG");
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .contact p {
     font-weight: 500;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .contact a {
-    color: var(--white-color);
+    color: var(--black-color);
     display: inline-grid;
 }
 
@@ -360,6 +393,7 @@ h2 {
     display: inline-block;
     margin: var(--space-2) var(--space) var(--space);
     background-repeat: no-repeat;
+    color: var(--black-color);
 }
 
 .social-link.linkedin {
@@ -428,18 +462,35 @@ section .item {
     color: var(--white-color);
 }
 footer {
-    background: var(--black-color);
+    /* background: var(--black-color); */
+    /* background:#ff8275; */
     text-align: center;
     padding: var(--space-2) 0;
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 1rem;
+    box-shadow: 0px 12px 19px 11px rgb(235,146,93,1);
 }
 
 footer a {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
+.button {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--pink-color-dark);
+    border-color: ##d776b;
+    font-weight: 600;
+}
+.menu-content a.button {
+    color: #ed776b;
+}
 @media screen and (min-width: 700px) {
+    header {
+        background-size: 46% 110%;
+    }
     .hero h1 {
         font-size: 42px;
     }
@@ -453,7 +504,7 @@ footer a {
     .project {
         width: 100%;
         display:grid;
-        grid-template-columns: 50% 20%;
+        grid-template-columns: 50% 35%;
         
     }
     .project-title {
@@ -491,12 +542,7 @@ footer a {
     .close {
         display: none;
     }
-    .button {
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
+
     .resume-content{
         display: grid;
         grid-template-columns:75% 25%;
